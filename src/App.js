@@ -64,7 +64,7 @@ function App() {
 
        <Routes>
 
-         <Route path="/start2" element={<FormText heading = "Welcome to Text Area" mode={mode} showalert={showalert}/>}>
+         <Route path="/start6" element={<FormText heading = "Welcome to Text Area" mode={mode} showalert={showalert}/>}>
           {/* /start2 because when uploading to github pages we refer to link like www.username.github.io/repository-name/ so we have to add the /repository-name to whichever content which we want to see in home page and also this thing should be updated in  package.json file by replacing it with username and repository name thats how react app is deployed on github pages.*/}
          </Route>
 

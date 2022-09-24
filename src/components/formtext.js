@@ -49,13 +49,13 @@ export default function FormText(props) {
 
 <textarea className="form-control mx-3" rows="10" id ="myBox" style={{backgroundColor : props.mode==='dark'?'grey':'white',color : props.mode==='light'?'black':'white'}} onChange = {handleonchange} value={text}></textarea>
 
-<button className="btn btn-primary mx- 3 my-3" onClick={handleupclick}>Convert into Upper Case</button>
+<button className="btn btn-primary mx- 3 my-3" disabled={text.length===0} onClick={handleupclick}>Convert into Upper Case</button>
 
-<button className="btn btn-primary mx-3 my-3" onClick={handledownclick}>Convert into Lower Case</button>
+<button className="btn btn-primary mx-3 my-3" disabled={text.length===0} onClick={handledownclick}>Convert into Lower Case</button>
 
-<button className="btn btn-primary mx-3 my-3" onClick={handleclear}>Clear Text</button>
+<button className="btn btn-primary mx-3 my-3" disabled={text.length===0} onClick={handleclear}>Clear Text</button>
 
-<button className='btn btn-primary mx-3 my-3' id='copy' onClick={handlecopy}>Copy Text</button>
+<button className='btn btn-primary mx-3 my-3' id='copy' disabled={text.length===0} onClick={handlecopy}>Copy Text</button>
 
 <a href="https://google.com" target="blank">Google</a>
 

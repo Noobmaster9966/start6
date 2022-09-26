@@ -47,7 +47,7 @@ export default function FormText(props) {
 
 <h1>{props.heading}</h1>
 
-<textarea className="form-control mx-3" rows="10" id ="myBox" style={{backgroundColor : props.mode==='dark'?'grey':'white',color : props.mode==='light'?'black':'white'}} onChange = {handleonchange} value={text}></textarea>
+<textarea className="form-control mx-3" rows="10" id ="myBox" style={{backgroundColor : props.mode==='dark'?'#2e2b2b':'white',color : props.mode==='light'?'black':'white'}} onChange = {handleonchange} value={text}></textarea>
 
 <button className="btn btn-primary mx- 3 my-3" disabled={text.length===0} onClick={handleupclick}>Convert into Upper Case</button>
 
